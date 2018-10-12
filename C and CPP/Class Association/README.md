@@ -2,12 +2,12 @@ Class and Object Collaboration
 Problem Description:
 
 1. Implement a Minimal Checking Account Class for Simulation.
-	a) Has a balance field.
-	b) Define a Constructor which creates an Account with an opening balance specified by user.  
-	c) Define a method to retrieve the balance.
-	d) Define a deposit method.
-	e) Define a withdraw method.
-	f) Define a transfer-funds method to transfer funds FROM Savings Account Object TO a Checking Account Object.
+ - Has a balance field.
+ - Define a Constructor which creates an Account with an opening balance specified by user.  
+ - Define a method to retrieve the balance.
+ - Define a deposit method.
+ - Define a withdraw method.
+ - Define a transfer-funds method to transfer funds FROM Savings Account Object TO a Checking Account Object.
 
 2. Implement a Simple Credit Card Class for Simulation.
     a) Has a balance, finance rate (static field), and
