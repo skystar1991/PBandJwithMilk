@@ -5,6 +5,8 @@ This repository is going to be my portfolio, so that job recruiter can see all m
 
 I hope someone who try to learn how to code will see my codes and use them as examples or references.
 
-I will gladly accept any suggestions on my codes. please let me know!
+I will gladly listen to any suggestions on my codes. please let me know!
+
+If you find the code that is not working, please let me know!
 
 
