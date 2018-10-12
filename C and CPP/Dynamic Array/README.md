@@ -1,9 +1,8 @@
 Problem Description:
-
-Design an Array Class for integer data as described in the Lecture.
-Your array design should overcome the seven problems described in below.
-Create an array of 50 test scores between 10 and  90 for testing your class.
-Demonstrate ALL methods of the class. Identify your test cases.
+Design an Array Class for integer data as described in the Lecture. 
+Your array design should overcome the seven problems described in below. 
+Create an array of 50 test scores between 10 and  90 for testing your class. 
+Demonstrate ALL methods of the class. dentify your test cases.
 
 1. prevent referencing or trying to assign subscripts that are outside the range of the array
 2. reference arrays in a mathematical way, starting with a subscript of 1 instead of 0
