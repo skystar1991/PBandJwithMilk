@@ -28,18 +28,16 @@ Problem Description:
  - Define a method to compute interest on balance at end of month and apply to the balance.
  - Define a transfer-funds method to transfer funds FROM Checking Account Object TO a Saving Account Object.
 
-Using these Classes write a simulation program which has the 
-    following transactions each month:
+Using these Classes write a simulation program which has the following transactions each month:
+ Begin with $500 in checking and savings account.
+ 1. deposit pay    1000-2000
+ 2. savings         100-200
+ 3. loan payment    700-800
+ 4. pay 5 bills      30-80
+ 5. 10 card charges  20-90
+ 6. card payment    200-300
+ 7.end of month processing
 
-Begin with $500 in checking and savings account.
-	1. deposit pay    1000-2000
-      2. savings         100-200
-      3. loan payment    700-800
-      4. pay 5 bills      30-80
-      5. 10 card charges  20-90
-      6. card payment    200-300
-      7. end of month processing
-
-Use Random Generator to generate your data.	
+Use Random Generator to generate your data. 
 Run simulation for  8 months.
 Show account balances at end of each month.	
