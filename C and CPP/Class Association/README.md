@@ -36,7 +36,7 @@ Using these Classes write a simulation program which has the following transacti
  4. pay 5 bills      30-80
  5. 10 card charges  20-90
  6. card payment    200-300
- 7.end of month processing
+ 7. end of month processing
 
 Use Random Generator to generate your data. 
 Run simulation for  8 months.
