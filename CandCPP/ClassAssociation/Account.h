@@ -25,7 +25,7 @@ private:
 public:
 
     Account(double amt);
-   ~Account(); 
+    ~Account(); 
 
     Account(const Account* ptr);
 

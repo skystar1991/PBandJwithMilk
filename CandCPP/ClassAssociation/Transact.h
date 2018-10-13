@@ -25,7 +25,7 @@ public:
 
 
 
-    bool Transact::moneyTransfer(double amt);
+    bool moneyTransfer(double amt);
 };
     
 #endif
