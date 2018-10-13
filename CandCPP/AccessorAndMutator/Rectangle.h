@@ -3,14 +3,14 @@
 #ifndef RECTANGLE_H
 #define RECTANGLE_H
 
-    class Rectangle
-    {
-    private:
+class Rectangle
+{
+	private:
         //attributes(data)
         double width;
         double length;
-
-    public:
+	
+	public:
 
         //constructor
         Rectangle(double = 1, double = 1);
@@ -37,13 +37,9 @@
 
         //assignment operator
         Rectangle& operator=(const Rectangle&);   
-
         static Rectangle create(double,double);
-
-        static Rectangle* heapCreate(double,double);
-
-              
-    };
+	static Rectangle* heapCreate(double,double);
+};
 
 
 #endif

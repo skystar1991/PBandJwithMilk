@@ -11,25 +11,25 @@ Rectangle::Rectangle(double W, double L)
         throw "Invalid value for Width";
     if( ! this->setLength(L) )
         throw "Invalid value for Length";
-    cout<<"\nCreated Rectangle Object\n\n";   
+    cout << "\nCreated Rectangle Object\n\n";   
 }
 Rectangle::Rectangle(const Rectangle& r)
 {
     this->setLength(r.getLength());
     this->setWidth(r.getWidth());
-    cout<<"\nCreated Copy of Rectangle Object\n\n";   
+    cout << "\nCreated Copy of Rectangle Object\n\n";   
 }
 
 Rectangle::Rectangle(const Rectangle* r)
 {
     this->setLength(r->getLength());
     this->setWidth(r->getWidth());
-    cout<<"\nPointer Copy Constructor called.\n" 
-        <<"Created Copy of Rectangle Object.\n\n";   
+    cout << "\nPointer Copy Constructor called.\n" << "Created Copy of Rectangle Object.\n\n";   
 }
+
 Rectangle::~Rectangle()
 {
-    cout<<"\nRecovered Memory from a Rectangle Object\n\n";
+    cout << "\nRecovered Memory from a Rectangle Object\n\n";
 }
 
 bool Rectangle::isValidWidth(double wid)
@@ -83,7 +83,7 @@ Rectangle& Rectangle::operator =(const Rectangle& rhs)
 {
     length = rhs.length;
     width = rhs.width;
-    cout<<"Rectangle Object Assignment\n\n";
+    cout << "Rectangle Object Assignment\n\n";
     return *this;
 }
 
@@ -96,25 +96,24 @@ Rectangle Rectangle::create(double wid, double len)
     }
     catch(char* msg)
     {
-        cout<<msg<<endl;
-        cout<<"**** Entering Interactive Mode ****\n"<<endl;
+        cout << msg << endl;
+        cout << "**** Entering Interactive Mode ****\n" << endl;
     }
     while( ! Rectangle::isValidWidth(wid) )
     {
-        cout<<"Enter Width: ";
-        cin>>wid;
+        cout << "Enter Width: ";
+        cin >> wid;
     }
     while( ! Rectangle::isValidLength(len) )
     {
-        cout<<"Enter Length: ";
-        cin>>len;
+        cout << "Enter Length: ";
+        cin >> len;
     }
 
     Rectangle r(wid,len);
 
-    cout<<"(wid,len): "<<r.getWidth()<<","
-                       <<r.getLength()<<endl;
-    cout<<"Exit createRectangle()\n";
+    cout << "(wid,len): " << r.getWidth() << "," << r.getLength() << endl;
+    cout << "Exit createRectangle()\n";
 
     return r;
 }//end create
@@ -129,25 +128,24 @@ Rectangle* Rectangle::heapCreate(double wid, double len)
     }
     catch(char* msg)
     {
-        cout<<msg<<endl;
-        cout<<"**** Entering Interactive Mode ****\n"<<endl;
+        cout << msg << endl;
+        cout << "**** Entering Interactive Mode ****\n" << endl;
     }
     while( ! Rectangle::isValidWidth(wid) )
     {
-        cout<<"Enter Width: ";
-        cin>>wid;
+        cout << "Enter Width: ";
+        cin >> wid;
     }
     while( ! Rectangle::isValidLength(len) )
     {
-        cout<<"Enter Length: ";
-        cin>>len;
+        cout << "Enter Length: ";
+        cin >> len;
     }
 
     r = new Rectangle(wid,len);
 
-    cout<<"(wid,len): "<<r->getWidth()<<","
-                       <<r->getLength()<<endl;
-    cout<<"Exit createRectangle()\n";
+    cout << "(wid,len): " << r->getWidth() << "," << r->getLength() << endl;
+    cout << "Exit createRectangle()\n";
 
     return r;
 }//end create
