@@ -13,7 +13,7 @@ class Rectangle
 	public:
 
         //constructor
-        Rectangle(double = 1, double = 1);
+        Rectangle(double, double);
 
         //copy constructor
         Rectangle(const Rectangle&);
