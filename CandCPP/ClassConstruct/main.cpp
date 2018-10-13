@@ -7,7 +7,8 @@ private:
 	int month;
 	int day;
 	int year;
-
+	char const * m1 [13] = {0, "January", "Febuary", "March", "April","May", "June", "July",
+		"August", "September", "October", "November", "December"};
 public:
 Date(): month(1), day(1), year(1900) {}
 
@@ -25,7 +26,6 @@ Date(): month(1), day(1), year(1900) {}
 int main()
 {
 	Date d;
-	//char* m1 [13] = {0, "January", "Febuary", "March", "April","May", "June", "July", "August", "September", "October", "November", "December"};
 	int value;
 	do 
 	{
@@ -103,12 +103,10 @@ void Date::show1()
 }
 void Date::show2()
 {
-	char* m1 [13] = {0, "January", "Febuary", "March", "April","May", "June", "July", "August", "September", "October", "November", "December"};
 	cout<<m1[month]<<" "<<day<<", "<<year<<endl;
 }
 void Date::show3()
 {
-	char* m1 [13] = {0, "January", "Febuary", "March", "April","May", "June", "July", "August", "September", "October", "November", "December"};
 	cout<<day<<" "<<m1[month]<<" "<<year<<endl;
 }
 

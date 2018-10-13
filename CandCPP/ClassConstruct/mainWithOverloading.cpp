@@ -1,30 +1,33 @@
+// this has lots to debug. I will get back to this later.
+
 #include <iostream>
 using namespace std;
 
 class Date
 {
-private:
-	int month;
-	int day;
-	int year;
-public:
-Date(): month(1), day(1), year(1900) {}
-	bool setMonth(int);
-	bool setDay(int);
-	bool setYear(int);
-	int getMonth() const;
-	int getDay() const;
-	int getYear() const;
-	void show1();
-	void show2();
-	void show3();
-	Date& operator++();
-	Date operator++(int);
-	Date& operator--();
-	Date operator--(int);
-	Date operator-(const Date &obj);
-	friend ostream& operator<<(ostream&, const Date);
-	friend istream& operator>>(istream&, const Date&);	
+	private:
+		int month;
+		int day;
+		int year;
+		char const * m1 [13] = {0, "January", "Febuary", "March", "April","May", "June", "July", "August", "September", "October", "November", "December"};
+	public:
+		Date(): month(1), day(1), year(1900) {}
+		bool setMonth(int);
+		bool setDay(int);
+		bool setYear(int);
+		int getMonth() const;
+		int getDay() const;
+		int getYear() const;
+		void show1();
+		void show2();
+		void show3();
+		Date& operator++();
+		Date operator++(int);
+		Date& operator--();
+		Date operator--(int);
+		Date operator-(const Date &obj);
+		friend ostream& operator<<(ostream&, const Date);
+		friend istream& operator>>(istream&, const Date&);	
 };
 int main()
 {
@@ -102,12 +105,10 @@ void Date::show1()
 }
 void Date::show2()
 {
-	char* m1 [13] = {0, "January", "Febuary", "March", "April","May", "June", "July", "August", "September", "October", "November", "December"};
 	cout<<m1[month]<<" "<<day<<", "<<year<<endl;
 }
 void Date::show3()
 {
-	char* m1 [13] = {0, "January", "Febuary", "March", "April","May", "June", "July", "August", "September", "October", "November", "December"};
 	cout<<day<<" "<<m1[month]<<" "<<year<<endl;
 }
 Date& Date::operator++()
