@@ -2,7 +2,7 @@
 #define TIMEOFF
 #include <iostream>
 #include <string>
-#include "NumDays.h"
+#include "NumDays.cpp"
 using namespace std;
 
 class TimeOff
@@ -18,69 +18,153 @@ private:
 	int idNum;
 public:
 	TimeOff()
-	{set("",0);}
+	{
+		set("", 0);
+	}
+	
 	TimeOff(const string n, int i)
-	{set(n,i);}
+	{
+		set(n, i);
+	}
+	
 	void set(string n, int i)
-	{ name = n;
-	idNum = i;}
+	{
+		name = n;
+		idNum = i;
+	}
+	
 	string getname() const
-	{return name;}
+	{
+		return name;
+	}
+	
 	int getidNum() const
-	{return idNum;}
+	{
+		return idNum;
+	}
+	
 	void setMaxSick(double d)
-	{maxSickDays.setDay(d);}
+	{
+		maxSickDays.setDay(d);
+	}
+	
 	void setSickTaken(double d)
-	{sickTaken.setDay(d);}
+	{
+		sickTaken.setDay(d);
+	}
+	
 	void setMaxVacation(double d)
-	{if(d>30)
-	d = 30;
-	maxVacation.setDay(d);}
+	{
+		if(d > 30)
+			d = 30;
+		maxVacation.setDay(d);
+	}
+
 	void setVacTaken(double d)
-	{vacTaken.setDay(d);}
+	{
+		vacTaken.setDay(d);
+	}
+	
 	void setMaxUnpaid(double d)
-	{maxUnpaid.setDay(d);}
+	{
+		maxUnpaid.setDay(d);
+	}
+	
 	void setUnpaidTaken(double d)
-	{unpaidTaken.setDay(d);}
+	{
+		unpaidTaken.setDay(d);
+	}
+	
 	void setMaxSick(int h)
-	{maxSickDays.setHour(h);}
+	{
+		maxSickDays.setHour(h);
+	}
+	
 	void setSickTaken(int h)
-	{sickTaken.setHour(h);}
+	{
+		sickTaken.setHour(h);
+	}
+	
 	void setMaxVacation(int h)
-	{if(h>240)
-	h = 240;
-	maxVacation.setHour(h);}
+	{
+		if(h>240)
+			h = 240;
+		maxVacation.setHour(h);
+	}
+
 	void setVacTaken(int h)
-	{vacTaken.setHour(h);}
+	{
+		vacTaken.setHour(h);
+	}
+
 	void setMaxUnpaid(int h)
-	{maxUnpaid.setHour(h);}
+	{
+		maxUnpaid.setHour(h);
+	}
+	
 	void setUnpaidTaken(int h)
-	{unpaidTaken.setHour(h);}
+	{
+		unpaidTaken.setHour(h);
+	}
+	
 	double getMaxSickDay()
-{
-	return maxSickDays.getDay();
-}
+	{
+		return maxSickDays.getDay();
+	}
+	
 	double getSickTakenDay()
-	{return sickTaken.getDay();}
+	{
+		return sickTaken.getDay();
+	}
+	
 	double getMaxVacationDay()
-	{return maxVacation.getDay();}
+	{
+		return maxVacation.getDay();
+	}
+	
 	double getVacTakenDays()
-	{return vacTaken.getDay();}
+	{
+		return vacTaken.getDay();
+	}
+	
 	double getMaxUnpaidDay()
-	{return maxUnpaid.getDay();}
+	{
+		return maxUnpaid.getDay();
+	}
+	
 	double getUnpaidTakenDay()
-	{return unpaidTaken.getDay();}
+	{
+		return unpaidTaken.getDay();
+	}
+	
 	int getMaxSickHour()
-	{return maxSickDays.getHour();}
+	{
+		return maxSickDays.getHour();
+	}
+	
 	int getSickTakenHour()
-	{return sickTaken.getHour();}
+	{
+		return sickTaken.getHour();
+	}
+	
 	int getMaxVacationHour()
-	{return maxVacation.getHour();}
+	{
+		return maxVacation.getHour();
+	}
+	
 	int getVacTakenHour()
-	{return vacTaken.getHour();}
+	{
+		return vacTaken.getHour();
+	}
+	
 	int getMaxUnpaidHour()
-	{return maxUnpaid.getHour();}
-	int TimeOff::getUnpaidTakenHour()
-	{return unpaidTaken.getHour();}
+	{
+		return maxUnpaid.getHour();
+	}
+	
+	int getUnpaidTakenHour()
+	{
+		return unpaidTaken.getHour();
+	}
 };
 #endif

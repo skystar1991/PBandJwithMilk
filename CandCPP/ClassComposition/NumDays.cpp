@@ -11,33 +11,56 @@ private:
 public:
 	NumDays()
 	{
-    set(0,0.0);
-  }
+    	set(0,0.0);
+	}
+	
 	NumDays(const int hour, const double day)
-	{set(hour, day);}
+	{
+		set(hour, day);
+	}
+
 	void set(int h, double d)
-	{hour = h;
-	day = hour/8.0;}
+	{
+		hour = h;
+		day = hour/8.0;
+	}
+
 	int getHour() const
-	{return hour;}
+	{
+		return hour;
+	}
+
 	double getDay() const
-	{return day;}
+	{
+		return day;
+	}
+
 	void setHour(int h)
-	{if(h>=0)
-	{hour = h;
-	day = h/8.0;}
-	else
+	{
+		if(h>=0)
+		{
+			hour = h;
+			day = h/8.0;
+		}
+		else
 		cout<<"Invalid Hour \n";
 	}
+	
 	void setDay(double d)
-	{if(d>=0)
-	{day = d;
-	hour = d*8;}
-	else
-		cout<<"Invalid Day. \n";
+	{
+		if(d>=0)
+		{
+			day = d;
+			hour = d*8;
+		}
+		else
+			cout << "Invalid Day. \n";
 	}
-	/*~NumDays()
-	{delete hour;
-	delete day;}*/
+	
+	~NumDays()
+	{
+		hour = 0;
+		day = 0.0;
+	}
 };
 #endif
