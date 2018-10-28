@@ -1,8 +1,8 @@
-I leaned LISP for 'organization of programming language' class.
+I leaned LISP in 'organization of programming language' class.
 
-1) the function will take a single integer as an argument and returns a bool that tells you whether the num is divisible by 5. 
+1) **the function will take a single integer as an argument and returns a bool that tells you whether the num is divisible by 5.**
 
-EX) 
+EX)
 ```lisp
 >(divisible-by-5 14) 
 #f
@@ -11,7 +11,7 @@ EX)
 >(divisible-by-5 30)
 #t
 ```
-2) the function will pass 7 into an argument.
+2) **the function will pass 7 into an argument.**
 
 EX)
 ```lisp
@@ -23,7 +23,7 @@ EX)
 8
 ```
 
-3) Fibonacci number
+3) **Fibonacci number**
 
 EX)
 ```lisp
@@ -35,7 +35,7 @@ EX)
 89
 ```
 
-4) using 'mapcar'. 
+4) **using 'mapcar'.** 
 
 EX)
 ```lisp
